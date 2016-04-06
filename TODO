@@ -1,0 +1,4 @@
+Update to use JSON feed.  lipsum.com provides a JSON feed which is much easier to parse than XML.
+
+http://www.lipsum.com/feed/json
+
