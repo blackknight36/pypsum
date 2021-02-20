@@ -6,12 +6,11 @@ import requests
 from optparse import OptionParser
 
 def get_lipsum(howmany, what, start_with_lipsum):
-
     query_str  = "amount=" + str(howmany)
     query_str += "&what=" + what
     query_str += "&start=" + start_with_lipsum
 
-    r = requests.get('http://www.lipsum.com/feed/json', query_str)
+    r = requests.get('http://www.lipsum.com/feed/json?' + query_str)
 
     json_obj = json.loads(r.text)
 
